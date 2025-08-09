@@ -1,0 +1,30 @@
+name: iOS Unsigned IPA (for Signulous)
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: xcodebuild -version
+      - name: Build Release (iphoneos)
+        run: |
+          set -e
+          xcodebuild -project "Tetrissy.xcodeproj" -scheme "Tetrissy" -configuration Release -sdk iphoneos -destination 'generic/platform=iOS' BUILD_DIR="$PWD/build" clean build | xcpretty || exit 1
+      - name: Package unsigned .ipa
+        run: |
+          set -e
+          APP_PATH="build/Release-iphoneos/Tetrissy.app"
+          if [ ! -d "$APP_PATH" ]; then
+            echo "App not found at $APP_PATH"
+            ls -la build/Release-iphoneos || true
+            exit 1
+          fi
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          zip -r "Tetrissy-unsigned.ipa" Payload
+          rm -rf Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unsigned-ipa
+          path: "*.ipa"

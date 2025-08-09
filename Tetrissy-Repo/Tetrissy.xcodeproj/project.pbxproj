@@ -1,0 +1,180 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 56;
+  objects = {
+
+/* Begin PBXBuildFile section */
+    1F0000010000000000000001 /* TetrissyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1000010000000000000001 /* TetrissyApp.swift */; };
+    1F0000020000000000000001 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1000020000000000000001 /* Models.swift */; };
+    1F0000030000000000000001 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1000030000000000000001 /* GameViewModel.swift */; };
+    1F0000040000000000000001 /* GameViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1000040000000000000001 /* GameViews.swift */; };
+    1F0000050000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1000050000000000000001 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+    1F1000010000000000000001 /* TetrissyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrissyApp.swift; sourceTree = "<group>"; };
+    1F1000020000000000000001 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+    1F1000030000000000000001 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+    1F1000040000000000000001 /* GameViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViews.swift; sourceTree = "<group>"; };
+    1F1000050000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+    1F1000060000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+    1F2000010000000000000001 /* Tetrissy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Tetrissy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+    1F3000010000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+    1F4000010000000000000001 = {
+      isa = PBXGroup;
+      children = (
+        1F5000010000000000000001 /* Tetrissy */,
+        1F6000010000000000000001 /* Products */,
+      );
+      sourceTree = "<group>";
+    };
+    1F5000010000000000000001 /* Tetrissy */ = {
+      isa = PBXGroup;
+      children = (
+        1F1000010000000000000001 /* TetrissyApp.swift */,
+        1F1000020000000000000001 /* Models.swift */,
+        1F1000030000000000000001 /* GameViewModel.swift */,
+        1F1000040000000000000001 /* GameViews.swift */,
+        1F1000050000000000000001 /* Assets.xcassets */,
+        1F1000060000000000000001 /* Info.plist */,
+      );
+      path = Tetrissy;
+      sourceTree = "<group>";
+    };
+    1F6000010000000000000001 /* Products */ = {
+      isa = PBXGroup;
+      children = ( 1F2000010000000000000001 /* Tetrissy.app */, );
+      name = Products;
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+    1F7000010000000000000001 /* Tetrissy */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1F9000010000000000000001 /* Build configuration list for PBXNativeTarget "Tetrissy" */;
+      buildPhases = (
+        1FA000010000000000000001 /* Sources */,
+        1F3000010000000000000001 /* Frameworks */,
+        1FA000020000000000000001 /* Resources */,
+      );
+      buildRules = ( );
+      dependencies = ( );
+      name = Tetrissy;
+      productName = Tetrissy;
+      productReference = 1F2000010000000000000001 /* Tetrissy.app */;
+      productType = "com.apple.product-type.application";
+    };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+    1F8000010000000000000001 /* Project object */ = {
+      isa = PBXProject;
+      attributes = {
+        LastSwiftUpdateCheck = 1500;
+        LastUpgradeCheck = 1500;
+        TargetAttributes = { 1F7000010000000000000001 = { CreatedOnToolsVersion = 15.0; }; };
+      };
+      buildConfigurationList = 1F9000020000000000000001 /* Build configuration list for PBXProject "Tetrissy" */;
+      compatibilityVersion = "Xcode 15.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = ( en );
+      mainGroup = 1F4000010000000000000001;
+      productRefGroup = 1F6000010000000000000001 /* Products */;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = ( 1F7000010000000000000001 /* Tetrissy */ );
+    };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+    1FA000020000000000000001 /* Resources */ = {
+      isa = PBXResourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = ( 1F0000050000000000000001 /* Assets.xcassets in Resources */, );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+    1FA000010000000000000001 /* Sources */ = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        1F0000040000000000000001 /* GameViews.swift in Sources */,
+        1F0000030000000000000001 /* GameViewModel.swift in Sources */,
+        1F0000020000000000000001 /* Models.swift in Sources */,
+        1F0000010000000000000001 /* TetrissyApp.swift in Sources */,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+    1F9000030000000000000001 /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = Tetrissy;
+        PRODUCT_BUNDLE_IDENTIFIER = com.example.Tetrissy;
+        INFOPLIST_FILE = Tetrissy/Info.plist;
+        IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1";
+        GENERATE_INFOPLIST_FILE = NO;
+        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        CODE_SIGN_STYLE = Manual;
+        CODE_SIGN_IDENTITY = "";
+        DEVELOPMENT_TEAM = "";
+        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+        SWIFT_EMIT_LOC_STRINGS = NO;
+      };
+      name = Debug;
+    };
+    1F9000040000000000000001 /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = Tetrissy;
+        PRODUCT_BUNDLE_IDENTIFIER = com.example.Tetrissy;
+        INFOPLIST_FILE = Tetrissy/Info.plist;
+        IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+        SWIFT_VERSION = 5.0;
+        TARGETED_DEVICE_FAMILY = "1";
+        GENERATE_INFOPLIST_FILE = NO;
+        ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+        CODE_SIGN_STYLE = Manual;
+        CODE_SIGN_IDENTITY = "";
+        DEVELOPMENT_TEAM = "";
+        LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+        SWIFT_EMIT_LOC_STRINGS = NO;
+      };
+      name = Release;
+    };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+    1F9000010000000000000001 /* Build configuration list for PBXNativeTarget "Tetrissy" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = ( 1F9000030000000000000001 /* Debug */, 1F9000040000000000000001 /* Release */ );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    1F9000020000000000000001 /* Build configuration list for PBXProject "Tetrissy" */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = ( 1F9000030000000000000001 /* Debug */, 1F9000040000000000000001 /* Release */ );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+/* End XCConfigurationList section */
+
+  };
+  rootObject = 1F8000010000000000000001 /* Project object */;
+}
